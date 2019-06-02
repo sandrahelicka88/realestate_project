@@ -48,14 +48,14 @@
             {% if listing.photo_1 %}
             <div class="col-md-2">
               <a href="{{ listing.photo_1.url }}" data-lightbox="home-images">
-                <img src="{ listing.photo_1.url }}" alt="" class="img-fluid">
+                <img src="{{ listing.photo_1.url }}" alt="" class="img-fluid">
               </a>
             </div>
             {% endif %}
             {% if listing.photo_2 %}
             <div class="col-md-2">
               <a href="{{ listing.photo_2.url }}" data-lightbox="home-images">
-                <img src="{ listing.photo_2.url }}" alt="" class="img-fluid">
+                <img src="{{ listing.photo_2.url }}" alt="" class="img-fluid">
               </a>
             </div>
             {% endif %}
@@ -94,7 +94,7 @@
               <ul class="list-group list-group-flush">
                 <li class="list-group-item text-secondary">
                   <i class="fas fa-money-bill-alt"></i> Asking Price:
-                  <span class="float-right">${{ listing.price | intcomma }}</span>
+                  <span class="float-right">£{{ listing.price | intcomma }}</span>
                 </li>
                 <li class="list-group-item text-secondary">
                   <i class="fas fa-bed"></i> Bedrooms:
