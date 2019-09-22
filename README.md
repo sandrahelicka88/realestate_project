@@ -1,5 +1,5 @@
 # realestate_project
-Django Real Estate Website
+Django Real Estate Website(dynamic pages, listing management, blog articles, admin management, contact form and website search.
 
 ### How to develop:
 
